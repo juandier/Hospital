@@ -1,0 +1,111 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 8/05/2018, 08:32:06 AM
+    Author     : Leonardo
+*/
+#imagenFondo
+{
+    width: 100%; ; /* en porcentaje (el highlight del foro lo trasforma) */
+    height: 100%;
+    top:0;
+    left:0;
+    position:fixed;
+    z-index: -1;  
+}
+.login
+{    
+   margin-top: 80px;      
+   margin-left: 510px;
+   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif   
+}
+.User-Login
+{
+    margin-bottom: 5px;
+}
+/*Campos de usuario y password*/
+.login-input
+{
+   border: 1px solid #DBE1EB;
+  font-size: 14px;
+  font-family: Arial, Verdana;
+  padding-left: 7px;
+  padding-right: 7px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 7px;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -o-border-radius: 7px;
+  background: transparent;
+  background: linear-gradient(left, transparent, #F7F9FA);
+  background: -moz-linear-gradient(left, transparent, #F7F9FA);
+  background: -webkit-linear-gradient(left, transparent, #F7F9FA);
+  background: -o-linear-gradient(left, transparent, #F7F9FA);
+  color: #2E3133;
+}
+/*Titulo "Login"*/
+.login-title
+{
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    padding-left: 65px;
+}
+h1
+{
+    font-family: Arial, Verdana;
+}
+/*Boton de iniciar*/
+.login-button {
+font-family: Arial, Verdana;
+border-radius: 5px;
+height: 30px;
+width: 193px;
+align-items: center;
+margin-top: 10px;
+}
+.login-button:hover
+{
+    background-color: #2E86C1;
+    color: #33A7FF;
+    color: #ccc;
+}
+/*¿Aún no esta registrado?*/
+.login-nuevo
+{
+    font-size:10px;  
+    color:  #F7F9FA;   
+    margin-left: 40px;
+}
+/*Registro */
+.registroPaciente
+{
+    margin-left: 40%;
+    margin-top: 5%;
+    align-content: center;
+}
+h2
+{
+        font-family: Arial, Verdana;
+}
+/*Contenedor (Barra de arriba)*/
+.contenedor
+{
+    width: 100%;
+    margin-top: 0px;    
+    margin-left: 35%;
+    overflow: hidden; /*el over flow es el scroll*/
+}
+header
+{
+    margin-top: 0px;
+    background-color: #24282b;
+    color: #ffffff;    
+    margin-left: 0px;        
+    border-bottom: 5px solid    #1293d4;
+}
+
+
+
