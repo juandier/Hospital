@@ -20,6 +20,7 @@ function validarContraseñaPaciente(){
                 //var response = JSON.parse(this.response);
                 
                 alert("LEONARDO the best");
+                alert("prueba jd");
                 location.href = this.response;
             }
         }
