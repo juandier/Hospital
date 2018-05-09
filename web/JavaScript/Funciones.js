@@ -22,6 +22,7 @@ function validarContraseñaPaciente(){
                 alert("LEONARDO the best");
                 alert("prueba jd");
                 alert("prueba 2");
+                alert("prueba 3");
                 location.href = this.response;
             }
         }
