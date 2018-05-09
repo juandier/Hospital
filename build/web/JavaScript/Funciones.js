@@ -16,13 +16,7 @@ function validarContraseñaPaciente(){
         
         xhr.open("POST", "RegistroPacienteServlet");
         xhr.onreadystatechange = function(){
-            if(this.status == 200 && this.readyState ==4){
-                //var response = JSON.parse(this.response);
-                
-                alert("LEONARDO the best");
-                alert("prueba jd");
-                alert("prueba 2");
-                alert("prueba 3");
+            if(this.status == 200 && this.readyState ==4){                
                 location.href = this.response;
             }
         }
