@@ -19,7 +19,7 @@ function validarContraseñaPaciente(){
             if(this.status == 200 && this.readyState ==4){
                 //var response = JSON.parse(this.response);
                 
-                alert("LEONARDO ES muy muy GAY");
+                alert("LEONARDO ES muy muy muy GAY");
                 location.href = this.response;
             }
         }
