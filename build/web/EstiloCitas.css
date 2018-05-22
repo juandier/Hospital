@@ -18,34 +18,35 @@ and open the template in the editor.
 }
 .login
 {    
-   margin-top: 80px;      
-   margin-left: 510px;
-   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif   
+    margin-top: 95px;      
+    margin-left: 40%;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif   
 }
 .User-Login
 {
     margin-bottom: 5px;
+    align-items: center;
 }
 /*Campos de usuario y password*/
 .login-input
 {
-   border: 1px solid #DBE1EB;
-  font-size: 14px;
-  font-family: Arial, Verdana;
-  padding-left: 7px;
-  padding-right: 7px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border-radius: 7px;
-  -moz-border-radius: 7px;
-  -webkit-border-radius: 7px;
-  -o-border-radius: 7px;
-  background: transparent;
-  background: linear-gradient(left, transparent, #F7F9FA);
-  background: -moz-linear-gradient(left, transparent, #F7F9FA);
-  background: -webkit-linear-gradient(left, transparent, #F7F9FA);
-  background: -o-linear-gradient(left, transparent, #F7F9FA);
-  color: #2E3133;
+    border: 1px solid #DBE1EB;
+    font-size: 14px;
+    font-family: Arial, Verdana;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 7px;
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -o-border-radius: 7px;
+    background: transparent;
+    background: linear-gradient(left, transparent, #F7F9FA);
+    background: -moz-linear-gradient(left, transparent, #F7F9FA);
+    background: -webkit-linear-gradient(left, transparent, #F7F9FA);
+    background: -o-linear-gradient(left, transparent, #F7F9FA);
+    color: #2E3133;
 }
 /*Titulo "Login"*/
 .login-title
@@ -59,12 +60,12 @@ h1
 }
 /*Boton de iniciar*/
 .login-button {
-font-family: Arial, Verdana;
-border-radius: 5px;
-height: 30px;
-width: 193px;
-align-items: center;
-margin-top: 10px;
+    font-family: Arial, Verdana;
+    border-radius: 5px;
+    height: 30px;
+    width: 193px;
+    align-items: center;
+    margin-top: 10px;
 }
 .login-button:hover
 {
@@ -82,30 +83,61 @@ margin-top: 10px;
 /*Registro */
 .registroPaciente
 {
-    margin-left: 40%;
+    margin-left: 43%;
     margin-top: 5%;
     align-content: center;
 }
 h2
 {
-        font-family: Arial, Verdana;
+    font-family: Arial, Verdana;
 }
 /*Contenedor (Barra de arriba)*/
 .contenedor
 {
-    width: 100%;
-    margin-top: 0px;    
-    margin-left: 35%;
+    width: 80%;
+    margin-top: 0px;
+    margin:auto;    
     overflow: hidden; /*el over flow es el scroll*/
 }
 header
-{
-    margin-top: 0px;
-    background-color: #24282b;
-    color: #ffffff;    
-    margin-left: 0px;        
+{    
+   background-color: #24282b;
+    color: #ffffff;
+    padding-top: 1px;
+    min-height: 70px;
     border-bottom: 5px solid    #1293d4;
+    margin-top: 0px;   
 }
-
-
-
+.fecha-input
+{
+    border: 1px solid #DBE1EB;
+    font-size: 14px;
+    font-family: Arial, Verdana;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width:165px;   
+    border-radius: 7px;;
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -o-border-radius: 7px;
+    background: transparent;
+    background: linear-gradient(left, transparent, #F7F9FA);
+    background: -moz-linear-gradient(left, transparent, #F7F9FA);
+    background: -webkit-linear-gradient(left, transparent, #F7F9FA);
+    background: -o-linear-gradient(left, transparent, #F7F9FA);
+    color: #2E3133;      
+    margin-bottom: 3px;
+    align-items: center;
+}
+.User-Login2{
+    margin-left:28%;
+    margin-top: 0px;
+}
+#imagenDoctor
+{
+ margin-left: 10px;
+ margin-top: 20px;
+ margin-right: 0px;
+}

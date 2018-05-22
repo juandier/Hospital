@@ -19,9 +19,9 @@
             <div id="cabecera">
                 <nav>
                     <ul>                           
-                        <li class="Actual"><a href="index.html">Inicio</a></li>
-                        <li class="Actual"><a href="CitasLogin.jsp">Citas</a></li>
-                        <li class="Actual"><a href="#piePagina">Nosotros</a></li>                                                
+                        <li class="Actual"><a href="index.jsp">Inicio</a></li>
+                        <li class="Actual"><a href="RegistroPaciente.jsp">Citas</a></li>
+                        <li class="Actual"><a href="CitasLogin.jsp">Empleados</a></li>                                                
                     </ul> 
                 </nav>
             </div>
