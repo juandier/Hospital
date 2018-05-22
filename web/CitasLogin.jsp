@@ -15,7 +15,7 @@
     <body class="bodyLogin">              
         <section id="Login">
             <img id="imagenFondo" src="Imagenes/Login.jpg" alt="imgLoging"> 
-            <form class="login" action="LoginServlet" method="post">
+            <form class="login" action="GestionCita" method="post">
                 <h3 class="login-title">Login</h3>
                 <div class="User-Login">
                     <input type="text" class="login-input" name="usuario" placeholder="Usuario" autofocus>
@@ -26,10 +26,8 @@
                 <div>
                     <input type="submit"  value="Iniciar" class="login-button">
                     <input type="hidden" name="action" value="iniciar" class="login-button">
-                </div>
-                <p class="login-nuevo"><a href="RegistroPaciente.jsp">¿Aún no estas registrado?</a></p>
+                </div>                
             </form>            
-        </section>               
-        
+        </section>                       
     </body>
 </html>

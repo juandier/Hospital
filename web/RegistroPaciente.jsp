@@ -17,43 +17,52 @@
             <div class="contenedor">
                 <div id="marca">
                     <h1>
-                        Registro de pacientes
+                        Registro de cita
                     </h1>                   
                 </div>                                     
             </div>
         </header>
-        <form class="registroPaciente" method="post">            
-            <h2>Datos personales</h2>
+        <form class="registroPaciente" method="post" action="RegistroCita">                        
             <div class="User-Login">
                 <label for="exampleInputEmail1"></label>
-                <input  type="text" class="login-input" id="numeroSeguridadSocial" aria-describedby="emailHelp" placeholder="Número Seguridad Social">
+                <input  type="text" class="login-input" id="numeroSeguridadSocial" name="nss"aria-describedby="emailHelp" placeholder="Número Seguridad Social">
+            </div>                                               
+            <div class="User-Login">
+                <label for="exampleInputEmail1"></label>
+                <input type="text" class="login-input" id="nombrePaciente"  name="nombrePaciente"aria-describedby="emailHelp" placeholder="Nombre">
             </div>            
             <div class="User-Login">
-                <label for="exampleInputPassword1"></label>
-                <input type="password" class="login-input" id="contraseñaPaciente" placeholder="contraseña">
-            </div>    
-
-            <div class="User-Login">
-                <label for="exampleInputPassword1"></label>
-                <input type="password" class="login-input" id="repitaContraseña" placeholder="Confirme contraseña">
-            </div>    
-            <br>
-            <div class="User-Login">
                 <label for="exampleInputEmail1"></label>
-                <input type="text" class="login-input" id="nombrePaciente" aria-describedby="emailHelp" placeholder="Nombre">
-            </div>
-            <div class="User-Login">
-                <label for="exampleInputEmail1"></label>
-                <input type="text" class="login-input" id="apellidos" aria-describedby="emailHelp" placeholder="Apellidos">                                    
+                <input type="text" class="login-input" id="apellidos" name="apellidoPaciente" aria-describedby="emailHelp" placeholder="Apellidos">                                    
             </div>
             <div class="User-Login">
                 <label for="exampleInputPassword1"></label>
-                <input type="text" class="login-input" id="telefono" placeholder="Teléfono">
-            </div>         
+                <input type="text" class="login-input" id="telefono" placeholder="Teléfono" name="telefono">
+            </div>               
+            <div class="User-Login">
+                <label for="exampleInputPassword1"></label>
+                <input type="text" class="login-input" id="descripcion" placeholder="Descripcion del malestar" name="descripcion">
+            </div>
+            <div class="fecha-input">
+                fecha 
+                <br>
+                <input type="date" name="fecha" min="2018-03-25"
+                       max="2019-12-25" step="1">                   
+            </div>
+            <div class="fecha-input">
+                hora
+                <br>
+                <input type="time" name="hora" min="18:00"
+                       max="21:00" step="3600">  
+            </div>     
+            <select name="medicosDisponibles">
+                <option value="1">Medico 1</option> 
+                <option value="2">Medico 2</option>                 
+            </select> 
             <div>
-                <input type="submit"  value="Registrarse" class="login-button" onclick="validarContraseñaPaciente()">
+                <input type="submit"  value="Pedir cita" class="login-button">
                 <input type="hidden" name="action" value="RegistroPaciente" class="login-button">
-            </div>
+            </div>            
         </form>
         <script src="JavaScript/Funciones.js"></script>
     </body>
