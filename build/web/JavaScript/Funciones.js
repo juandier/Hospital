@@ -19,10 +19,8 @@ function validarContraseñaPaciente(){
             if(this.status == 200 && this.readyState ==4){                
                 location.href = this.response;
             }
-        }
-        
-        xhr.send();
-        
+        }        
+        xhr.send();        
     }
     
     
