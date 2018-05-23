@@ -9,8 +9,6 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.Date;
 import java.sql.Time;
-import java.text.SimpleDateFormat;
-import java.time.Instant;
 import java.time.LocalTime;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -41,6 +39,7 @@ public class RegistroCita extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
             /* TODO output your page here. You may use following sample code. */
+            System.out.println("paso por la linea 72 de Registro cita");
         }
     }
 
@@ -70,7 +69,8 @@ public class RegistroCita extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        String tipoRespuesta = request.getParameter("action");
+        System.out.println("hola");
+        String tipoRespuesta = request.getParameter("action");        
         if (tipoRespuesta.equalsIgnoreCase("RegistroPaciente")) {
             String nombre = request.getParameter("nombrePaciente");
             String apellidos = request.getParameter("apellidoPaciente");
@@ -82,14 +82,12 @@ public class RegistroCita extends HttpServlet {
             Time time= Time.valueOf(LocalTime.parse(hora));
             String telefono = request.getParameter("telefono");
             String descripcion = request.getParameter("descripcion");
-            String numeroMedico = request.getParameter("MedicosDisponibles");
+            String numeroMedico = request.getParameter("MedicosDisponibles");   
+            System.out.println("paso por la linea 84 de Registro cita");
+            int id=9;
             try {
                 ConexionBD conexion = new ConexionBD("clinica");
-                String sql = "insert into cita (dia,hora,nombre,apellidos,telefono,descripcion,nss,idMedico) values (" + sqlDate + ","
-                        + "" + time + "" + "," + "'" + nombre + "','" + apellidos + "','" + telefono + "','" + descripcion
-                        + "','" + nss + "'," + "2" + ")";
-                System.out.println(sql);
-                conexion.insertarDatos(sql);
+                conexion.insertarCitas(fecha, time, nombre, apellidos, telefono, descripcion, nss, 1);                                
                 response.sendRedirect("index.jsp");
             } catch (ClassNotFoundException ex) {
                 Logger.getLogger(RegistroCita.class.getName()).log(Level.SEVERE, null, ex);

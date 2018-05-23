@@ -45,13 +45,43 @@ public class ConexionBD {
             }
         }
     }
-    
+    //ejemplo de una inserccion;
     public void insertarDatos(String sql)
     {
         PreparedStatement consulta;
         try {
             consulta = conexion.prepareStatement(sql);
+            /*AQUI VA EL 
+            preparedStatement.setInt(1, 11);
+            preparedStatement.setString(2, "mkyong");
+            preparedStatement.setString(3, "system");
+            preparedStatement.setTimestamp(4, getCurrentTimeStamp());
+
+            // execute insert SQL stetement
+            preparedStatement.executeUpdate();*/            
         } catch (SQLException ex) {
+            Logger.getLogger(ConexionBD.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+    
+    public void insertarCitas(java.sql.Date dia, java.sql.Time hora,String nombre
+            ,String apellidos,String telefono,String descripcion,String nss,int idMedico)
+    {
+        PreparedStatement insertar ;
+       try {
+            insertar = conexion.prepareStatement("insert into cita (dia,hora,nombre,apellidos,telefono,descripcion,nss,idMedico) values (?,?,?,?,?,?,?,?)");
+            
+            insertar.setDate(1, dia);
+            insertar.setTime(2, hora);
+            insertar.setString(3, nombre);
+            insertar.setString(4, apellidos);
+            insertar.setString(5, telefono);
+            insertar.setString(6, descripcion);
+            insertar.setString(7, nss);
+            insertar.setInt(8, idMedico);
+            insertar.executeUpdate();                                         
+        } catch (SQLException ex) {
+            System.out.println("no funciono query insertar");
             Logger.getLogger(ConexionBD.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
